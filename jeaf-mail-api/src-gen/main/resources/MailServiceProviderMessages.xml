@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Root PUBLIC "MessageData" "MessageData.dtd">
+<Root>
+    <ClassInfo author="JEAF Development Team" className="MailServiceProviderMessages" description="Class contains all generated constants for messages used by the mail service provider." package="com.anaptecs.jeaf.spi.mail" version="1.0" />
+    <MessageFolder name="Mail Service Provider">
+        <Message defaultText="E-mail could not be send. {0}" description="Exceptions with this error code are thrown if the sending of a message fails." messageID="5000" name="MAIL_MESSAGE_SEND_ERROR" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="A field could not be written inside the message." description="Exceptions with this code are thrown when a field cannot be written inside a message. Can be a matter of character encoding." messageID="5001" name="MAIL_MESSAGE_SET_FIELD_ERROR" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="The JNDI lookup failed." description="Exceptions with this code are thrown when a JNDI lookup has failed." messageID="5002" name="MAIL_JNDI_LOOKUP_ERROR" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="The loading of the properties failed." description="Exceptions with this code are thrown when the loading of the properties has failed." messageID="5003" name="MAIL_PROPERTIES_ERROR" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Sending mail with subject ''{0}'' to ''{1}''." description="Messages with this ID are traced when a message will be sent." messageID="5004" name="SENDING_MAIL" traceLevel="INFO" type="INFO" />
+        <Message defaultText="Not sending mail with subject ''{0}'' to ''{1}'' as sending is currently disabled." description="Messages with this ID are traced when a message will not be sent." messageID="5005" name="NOT_SENDING_MAIL" traceLevel="ERROR" type="INFO" />
+        <Message defaultText="Currently sending of mails is disabled. All mails to be send will be ignored and will not be sent later." description="Messages with this ID are traced when a message will not be sent." messageID="5006" name="SENDING_MAILS_DISABLED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Dynamic Property 'mailFrom' is not set. This will cause an error when trying to send mails through JEAF's Mail Service Provider." messageID="5007" name="MAIL_FROM_NO_SET" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Dynamic Property 'mailFromPersonal' is not set. This may cause problems when trying to send mail depending on the configuration of the used mail server." messageID="5008" name="MAIL_FROM_PERSONAL_NO_SET" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="The runtime environment ''{0}'' is not supported by this mail service provider implementation." description="Exceptions with this error code are thrown if the mail service provider implementation is used within an unsupported environment." messageID="5009" name="UNSUPPORTED_RUNTIME" traceLevel="ERROR" type="ERROR" />
+    </MessageFolder>
+</Root>
